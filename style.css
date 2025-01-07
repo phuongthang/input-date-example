@@ -1,6 +1,12 @@
 .custom-select {
   position: relative;
-  width: 120px;
+  width: 110px;
+  font-family: Arial, sans-serif;
+}
+
+.custom-select-jp {
+  position: relative;
+  width: 95px;
   font-family: Arial, sans-serif;
 }
 
@@ -52,5 +58,5 @@
 
 .dropdown__menu-button-icon{
   color: #000000 !important;
-  margin-left: 10px;
+  margin-left: 5px;
 }
