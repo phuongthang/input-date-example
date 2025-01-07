@@ -223,9 +223,10 @@
     >
       <div class="custom-select custom-select-jp">
         <div class="selected-option" id="selected-option-1">
-          <span id="selected-option-span-1">1990</span>
+          <span id="selected-option-span-1"
+            >1990 <span id="selected-option-span-1-1">年</span></span
+          >
           <div>
-            <span id="selected-option-span-1-1">年</span>
             <img
               src="./assets/img/down-arrow.png"
               alt=""
@@ -277,9 +278,10 @@
 
       <div class="custom-select custom-select-jp">
         <div class="selected-option" id="selected-option-2">
-          <span id="selected-option-span-2">01</span>
+          <span id="selected-option-span-2"
+            >01 <span id="selected-option-span-2-2"> 月 </span></span
+          >
           <div>
-            <span id="selected-option-span-2-2"> 月 </span>
             <img
               src="./assets/img/down-arrow.png"
               alt=""
@@ -307,16 +309,16 @@
 
       <div class="custom-select custom-select-jp">
         <div class="selected-option" id="selected-option-3">
-          <span id="selected-option-span-3">01</span>
+          <span id="selected-option-span-3"
+            >01<span id="selected-option-span-3-3"> 日</span></span>
           <div>
-            <span id="selected-option-span-3-3">
-              日<img
-                src="./assets/img/down-arrow.png"
-                alt=""
-                class="dropdown__menu-button-icon"
-                width="9"
-                height="9"
-            /></span>
+            <img
+              src="./assets/img/down-arrow.png"
+              alt=""
+              class="dropdown__menu-button-icon"
+              width="9"
+              height="9"
+            />
           </div>
         </div>
         <ul class="options-list" id="options-list-3">
@@ -361,7 +363,7 @@
     >
       <div class="custom-select">
         <div class="selected-option" id="selected-option-5">
-          <span id="selected-option-span-5">01</span>
+          <span id="selected-option-span-5"></span>
           <div>
             <span id="selected-option-span-5-5"
               >Month<img
@@ -390,7 +392,7 @@
       </div>
       <div class="custom-select">
         <div class="selected-option" id="selected-option-6">
-          <span id="selected-option-span-6">01</span>
+          <span id="selected-option-span-6"></span>
           <div>
             <span id="selected-option-span-6-6">Day</span>
             <img
@@ -439,7 +441,7 @@
 
       <div class="custom-select">
         <div class="selected-option" id="selected-option-4">
-          <span id="selected-option-span-4">1990</span>
+          <span id="selected-option-span-4"></span>
           <div>
             <span id="selected-option-span-4-4">Year</span>
             <img
@@ -566,7 +568,7 @@
 
       options1.forEach((option) => {
         option.addEventListener("click", (e) => {
-          selectOptionSpan1.textContent = e.target.textContent;
+          selectOptionSpan1.textContent = e.target.textContent + " 年";
           selectOptionSpan1.style.color = "#000000";
           selectOptionSpan11.style.color = "#000000";
           optionsList1.classList.remove("active");
@@ -585,7 +587,7 @@
 
       options2.forEach((option) => {
         option.addEventListener("click", (e) => {
-          selectOptionSpan2.textContent = e.target.textContent;
+          selectOptionSpan2.textContent = e.target.textContent + " 月";
           selectOptionSpan2.style.color = "#000000";
           selectOptionSpan22.style.color = "#000000";
           optionsList2.classList.remove("active");
@@ -604,7 +606,7 @@
 
       options3.forEach((option) => {
         option.addEventListener("click", (e) => {
-          selectOptionSpan3.textContent = e.target.textContent;
+          selectOptionSpan3.textContent = e.target.textContent + " 日";
           selectOptionSpan3.style.color = "#000000";
           selectOptionSpan33.style.color = "#000000";
           optionsList3.classList.remove("active");
@@ -655,6 +657,7 @@
           selectOptionSpan4.textContent = e.target.textContent;
           selectOptionSpan4.style.color = "#000000";
           selectOptionSpan44.style.color = "#000000";
+          selectOptionSpan44.textContent = "";
           optionsList4.classList.remove("active");
         });
       });
@@ -674,6 +677,7 @@
           selectOptionSpan5.textContent = e.target.textContent;
           selectOptionSpan5.style.color = "#000000";
           selectOptionSpan55.style.color = "#000000";
+          selectOptionSpan55.textContent = "";
           optionsList5.classList.remove("active");
         });
       });
@@ -693,6 +697,7 @@
           selectOptionSpan6.textContent = e.target.textContent;
           selectOptionSpan6.style.color = "#000000";
           selectOptionSpan66.style.color = "#000000";
+          selectOptionSpan66.textContent = "";
           optionsList6.classList.remove("active");
         });
       });
